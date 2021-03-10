@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemWatching"
+        android:icon="@drawable/ic_baseline_tv_24"
+        android:title="Watching"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemPlan"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="Plan to Watch"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemDropped"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="Dropped"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemFinished"
+        android:icon="@drawable/ic_baseline_check_24"
+        android:title="Finished"
+        app:showAsAction="always" />
+</menu>

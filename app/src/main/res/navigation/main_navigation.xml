@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemWatching">
+
+    <fragment
+        android:id="@+id/itemWatching"
+        android:name="com.ubaya.uts160718006.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/actionPlan"
+            app:destination="@id/itemPlan" />
+        <action
+            android:id="@+id/actionDropped"
+            app:destination="@id/itemDropped" />
+        <action
+            android:id="@+id/actionFinished"
+            app:destination="@id/itemFinished" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemPlan"
+        android:name="com.ubaya.uts160718006.view.PlanFragment"
+        android:label="fragment_plan"
+        tools:layout="@layout/fragment_plan" />
+    <fragment
+        android:id="@+id/itemDropped"
+        android:name="com.ubaya.uts160718006.view.DroppedFragment"
+        android:label="fragment_dropped"
+        tools:layout="@layout/fragment_dropped" />
+    <fragment
+        android:id="@+id/itemFinished"
+        android:name="com.ubaya.uts160718006.view.FinishedFragment"
+        android:label="fragment_finished"
+        tools:layout="@layout/fragment_finished" />
+</navigation>
