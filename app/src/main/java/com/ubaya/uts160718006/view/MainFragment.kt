@@ -1,5 +1,6 @@
 package com.ubaya.uts160718006.view
 
+import android.icu.text.CaseMap
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -29,8 +30,10 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 

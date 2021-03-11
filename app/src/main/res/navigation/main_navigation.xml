@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/itemWatching"
         android:name="com.ubaya.uts160718006.view.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:label="Watching"
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/actionPlan"
             app:destination="@id/itemPlan" />
@@ -23,16 +23,16 @@
     <fragment
         android:id="@+id/itemPlan"
         android:name="com.ubaya.uts160718006.view.PlanFragment"
-        android:label="fragment_plan"
+        android:label="Plan to Watch"
         tools:layout="@layout/fragment_plan" />
     <fragment
         android:id="@+id/itemDropped"
         android:name="com.ubaya.uts160718006.view.DroppedFragment"
-        android:label="fragment_dropped"
+        android:label="Dropped"
         tools:layout="@layout/fragment_dropped" />
     <fragment
         android:id="@+id/itemFinished"
         android:name="com.ubaya.uts160718006.view.FinishedFragment"
-        android:label="fragment_finished"
+        android:label="Finished"
         tools:layout="@layout/fragment_finished" />
 </navigation>
