@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ubaya.uts160718006.R
 import com.ubaya.uts160718006.viewmodel.PlanListViewModel
@@ -45,6 +46,11 @@ class PlanFragment : Fragment() {
         recViewPlan.adapter = planAdapter
 
         observeViewModel()
+
+        fabAdd.setOnClickListener{
+            val action = PlanFragmentDirections.actionAdd()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
     fun observeViewModel(){
         viewModel.planLD.observe(viewLifecycleOwner, Observer {

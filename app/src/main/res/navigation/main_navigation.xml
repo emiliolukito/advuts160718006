@@ -24,7 +24,11 @@
         android:id="@+id/itemPlan"
         android:name="com.ubaya.uts160718006.view.PlanFragment"
         android:label="Plan to Watch"
-        tools:layout="@layout/fragment_plan" />
+        tools:layout="@layout/fragment_plan" >
+        <action
+            android:id="@+id/actionAdd"
+            app:destination="@id/addFragment" />
+    </fragment>
     <fragment
         android:id="@+id/itemDropped"
         android:name="com.ubaya.uts160718006.view.DroppedFragment"
@@ -35,4 +39,14 @@
         android:name="com.ubaya.uts160718006.view.FinishedFragment"
         android:label="Finished"
         tools:layout="@layout/fragment_finished" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.ubaya.uts160718006.view.AddFragment"
+        android:label="Add an Anime"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/actionBack"
+            app:destination="@id/itemPlan"
+            app:popUpTo="@id/itemWatching" />
+    </fragment>
 </navigation>
